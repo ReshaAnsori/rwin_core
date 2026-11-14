@@ -1,0 +1,47 @@
+name: rwin_core
+description: >
+  Core utilities for Flutter Clean Architecture projects.
+  Includes error handling, network layer with token refresh, DI helpers,
+  Cubit utilities, type-safe storage, extensions, and theming.
+version: 0.1.0
+homepage: https://github.com/rwin/rwin_core
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.10.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Functional programming — Either<Failure, T>
+  dartz: ^0.10.1
+
+  # State equality
+  equatable: ^2.0.5
+
+  # State management
+  flutter_bloc: ^9.0.0
+
+  # Dependency injection
+  get_it: ^9.0.0
+
+  # HTTP client
+  http: ^1.2.0
+
+  # Secure storage for tokens
+  flutter_secure_storage: ^10.0.0
+
+  # Lightweight key-value storage
+  shared_preferences: ^2.5.0
+
+  # Date formatting
+  intl: ^0.20.0
+
+  # UUID generation
+  uuid: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
